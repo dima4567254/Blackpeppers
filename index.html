@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="https://yoursite.ru/favicon.png" type="image/x-icon">
+    <title>Blackpeppers</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+
+<!--
+    1 npm init
+    2 npm install
+
+-->
+
+<body>
+
+    <header class="header">
+        <nav class="menu">
+            <a class="menu__logo-link logo-link" href="#">
+                <img class="menu__logo logo" src="images/header-logo.png" alt="logo">
+            </a>
+            <button class="menu__btn" type="button">
+                <span></span>
+                <span class="sr-only">open menu</span>
+            </button>
+            <div class="menu__box">
+                <ul class="menu__items">
+                    <li class="menu__item">
+                        <a class="menu__link menu__link--active" href="#">
+                            Головна
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#service">
+                            Про нас
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#collections">
+                            Наша команда
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#products">
+                            Галерея
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#about">
+                            Прайс-лист
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#blog">
+                            Контакти
+                        </a>
+                    </li>
+                </ul>
+                <a class="menu__record link" href="#">
+                    Онлайн запис
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="intro" id="about">
+            <div class="intro__inner" style="background-image: url('images/header-bg.jpg');">
+                <div class="intro__box">
+                    <h1 class="intro__title">
+                        BlackPeppers barbershop & tattoo
+                    </h1>
+                    <a class="intro__link link" href="#">
+                        Онлайн запис
+                    </a>
+                </div>
+            </div>
+
+            <section class="about">
+                <div class="container">
+                    <div class="about__inner">
+                        <div class="about__box">
+                            <h1 class="about__title title">
+                                ПРО НАС
+                            </h1>
+                            <div class="about__text">
+                                <p>
+                                    Ми надаємо всі види перукарських послуг: від якісних чоловічих укладок до гоління
+                                    бороди. У
+                                    нас приваблива атмосфера і високий рівень сервісу, всі послуги надаються з
+                                    використанням
+                                    найякісніших професійних інструментів, кращої чоловічої косметики для волосся.
+                                </p>
+                            </div>
+                        </div>
+
+                        <source srcset="images/bklyn-owner.webp" type="image/webp"><img src="images/bklyn-owner.jpg"
+                            alt="Перукарня">
+                    </div>
+                </div>
+            </section>
+
+            <section class="team">
+                <div class="container">
+                    <h2 class="team__title title">
+                        Наша команда
+                    </h2>
+                    <ul class="team__items">
+                        <li class="team__item">
+
+                            <source srcset="images/3-1.webp" type="image/webp"><img class="team__img"
+                                src="images/3-1.jpg" alt="Сергій">
+                            <h3 class="team__subtitle ">
+                                Сергій
+                            </h3>
+                            <div class="team__text">
+                                Старший барбер
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="gallery">
+                <div class="container">
+                    <h2 class="gallery__title title">
+                        Галерея
+                    </h2>
+                    <ul class="gallery__items">
+                        <li class="gallery__item">
+                            <!-- переименовать картинки нормально для без -->
+                            <a class="gallery__link" href="#" data-fancybox="gallery">
+                                <img class="gallery__img" src="images/1.jpg" alt="Спина з лого">
+                            </a>
+                        </li>
+                        <li class="gallery__item">
+                            <a class="gallery__link" href="#" data-fancybox="gallery">
+
+                                <s<img class="gallery__img" src="images/2-1.jpg" alt="Гоління шиї">
+                            </a>
+                        </li>
+                        <li class="gallery__item">
+                            <a class="gallery__link" href="#" data-fancybox="gallery">
+
+                                <s<img class="gallery__img" src="images/3-1.jpg" alt="Стрижка за вухами">
+                            </a>
+                        </li>
+                        <li class="gallery__item">
+                            <a class="gallery__link" href="#" data-fancybox="gallery">
+
+                                <img class="gallery__img" src="images/4.jpg" alt="Вогняна стрижка">
+                            </a>
+                        </li>
+                        <li class="gallery__item">
+                            <a class="gallery__link" href="#" data-fancybox="gallery">
+
+                                <img class="gallery__img" src="images/5.jpg" alt="Крісло">
+                            </a>
+                        </li>
+                        <li class="gallery__item">
+                            <a class="gallery__link" href="#" data-fancybox="gallery">
+
+                                <img class="gallery__img" src="images/6.jpg" alt="інструменти">
+                            </a>
+                        </li>
+                        <li class="gallery__item">
+                            <a class="gallery__link" href="#" data-fancybox="gallery">
+
+                                <img class="gallery__img" src="images/7.jpg" alt="Килимок">
+                            </a>
+                        </li>
+                        <li class="gallery__item">
+                            <a class="gallery__link" href="#" data-fancybox="gallery">
+
+                                <img class="gallery__img" src="images/8.jpg" alt="Бритва">
+                            </a>
+                        </li>
+                        <li class="gallery__item">
+                            <a class="gallery__link" href="#" data-fancybox="gallery">
+
+                                <img class="gallery__img" src="images/9.jpg" alt="Стрижка машинкою">
+                            </a>
+                        </li>
+                        <li class="gallery__item">
+                            <a class="gallery__link" href="#" data-fancybox="gallery">
+
+                                <so<img class="gallery__img" src="images/10-1.jpg" alt="Перед стрижкою">
+                            </a>
+                        </li>
+                        <li class="gallery__item">
+                            <a class="gallery__link" href="#" data-fancybox="gallery">
+
+                                <so<img class="gallery__img" src="images/11-1.jpg" alt="Вищипування волосся">
+                            </a>
+                        </li>
+                        <li class="gallery__item">
+                            <a class="gallery__link" href="#" data-fancybox="gallery">
+
+                                <<img class="gallery__img" src="images/12.jpg" alt="Масаж голови">
+                            </a>
+                        </li>
+                        <li class="gallery__item">
+                            <a class="gallery__link" href="#" data-fancybox="gallery">
+
+                                <<img class="gallery__img" src="images/13.jpg" alt="Порошок для голови">
+                            </a>
+                        </li>
+                        <li class="gallery__item">
+                            <a class="gallery__link" href="#" data-fancybox="gallery">
+
+                                <<img class="gallery__img" src="images/14.jpg" alt="Машинка для стрижки волосся">
+                            </a>
+                        </li>
+                        <li class="gallery__item">
+                            <a class="gallery__link" href="#" data-fancybox="gallery">
+
+                                <<img class="gallery__img" src="images/15.jpg" alt="Гель">
+                            </a>
+                        </li>
+                        <li class="gallery__item">
+                            <a class="gallery__link" href="#" data-fancybox="gallery">
+
+                                <<img class="gallery__img" src="images/16.jpg" alt="паста для укладки волос">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="price">
+                <div class="container">
+                    <h2 class="price__title title">
+                        прайс-лист
+                    </h2>
+                    <div class="price__text">
+                        <p>
+                            Black Peppers Barbershop є тим місцем, де ви зможете зробити сувору коротку або модну
+                            чоловічу стрижку, гладко поголитися, оформити бороду, доглянути за волоссям або обличчям - з
+                            відмінним результатом і без непотрібного пафосу.
+                        </p>
+                    </div>
+                    <div class="price__inner">
+                        <h2 class="price__subtitle">
+                            прайс-лист
+                        </h2>
+                    </div>
+                    <div class="price__item">
+                        <p>Стрижка чоловіча</p> <span>350 | 400 грн</span>
+                    </div>
+                </div>
+            </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="map"></div>
+            <div class="contacts">
+                <a class="contacts__logo-link logo-link" href="#">
+
+                    <source srcset="images/header-logo.webp" type="image/webp"><img class="contacts__logo logo"
+                        src="images/header-logo.png" alt="logo">
+                    <div class="contacts__inner">
+                        <div class="contacts__left">
+                            <address class="contacts__address">
+                                <h2 class="contacts__title">
+                                    Адреса
+                                </h2>
+                                <div class="contacts__text">
+                                    <p>
+                                        вулиця Київська, 75,
+                                    </p>
+                                    <p>
+                                        Житомир,
+                                    </p>
+                                    <p>
+                                        Житомирська область
+                                    </p>
+                                </div>
+                            </address>
+                            <div class="contacts__item">
+                                <h2 class="contacts__title">
+                                    Телефон
+                                </h2>
+                                <a class="contacts__link" href="tel:+380 96 042 0595">+380 96 042 0595</a>
+                            </div>
+                        </div>
+                        <div class="contacts__right">
+                            <div class="contacts__item">
+                                <h2 class="contacts__title">
+                                    Години роботи
+                                </h2>
+                                <div class="contacts__text">
+                                    <p>
+                                        Понеділок - Неділя
+                                    </p>
+                                    <p>
+                                        9:00 - 20:00
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="contacts__item">
+                                <h2 class="contacts__title">
+                                    Соціальні мережі
+                                </h2>
+                                <ul class="social">
+                                    <li class="social__item">
+                                        <a class="social__link" href="#">
+                                            <!-- пнг переделать в свг если получится -->
+                                            <picture>
+                                                <source srcset="images/facebook.webp" type="image/webp"><img
+                                                    class="social__img" src="images/facebook.png" alt="facebook">
+                                            </picture>
+                                        </a>
+                                        <a class="social__link" href="#">
+                                            <picture>
+                                                <source srcset="images/telegram.webp" type="image/webp"><img
+                                                    class="social__img" src="images/telegram.png" alt="telegram">
+                                            </picture>
+                                        </a>
+                                        <a class="social__link" href="#">
+                                            <picture>
+                                                <source srcset="images/instagram.webp" type="image/webp"><img
+                                                    class="social__img" src="                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <!--
+<a class=" video" data-fancybox style="background-image: url('images/video-bg.jpg')"
+                                                    href="https://www.youtube.com/watch?v=Y2vZlSbw3iA">
+                                                <span class="sr-only">play video</span>
+                                        </a>
+                                        -->
+
+                                        <!--
+  <form class="footer-top__form">
+      <label class="sr-only" for="email">
+          Enter your email
+      </label>
+      <input class="footer-top__input" id="email-input" type="email" name="email" placeholder="Your Email" required
+          oninvalid="this.setCustomValidity('fill in this field!')">
+      <button class="footer-top__btn" type="submit">
+          <svg class="footer__svg" xmlns="http://www.w3.org/2000/svg" fill="#ffffff"
+              xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="17" viewBox="0 0 20 17">
+              <image id="send" width="20" height="17"
+                  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAARCAYAAADdRIy+AAABW0lEQVQ4jaWUTytEURjGf1NiJDTjfzNlYWFhKysbvoaV72LpOyhSIikmyUiztRKmsBYz2SgNOz169d66/5sZT91u9557fud5n/fcU5B0ApwBF8Ab/5QBO8AI8AAY/Bi47xsrqaWo2pL2Ja1LGpRELxcOSNOPpIakTUmVbqFWchuYSViP6g6oAQdAMzEaK/krxV2W3j2ONUnFLId7wAJQAqaAsjUrsXJSDcDm1oGXYLTwFySMAhNeukHngKo/230emAbGgaEYuulxHAK3ATBPw76YOV8EloFVYAUYCM2zPbwVfmGrT7qTwGUFmHWXVR+3aoohWAu4BI4sBnu5DSx5hmWfVMpxHOjJM6xFfgRJ3xkdTVNH0rWkDUljaV02h5+eU55egXMvq57zXSTUND0DO8Ap8Jgy3hXQDosbYNdPoY9uQGFgsK+sWwawsq56gcSBdmxZLrYxrcT+BfwCdYhXWkZ0abIAAAAASUVORK5CYII=" />
+          </svg>
+          <span class="sr-only">send message button</span>
+      </button>
+  </form>
+
+-->
+                                        <script src="js/main.min.js"></script>
+</body>
+
+</html>

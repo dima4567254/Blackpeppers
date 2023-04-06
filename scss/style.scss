@@ -1,0 +1,195 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'global';
+@import 'libs';
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    // background-color: rgba(0, 0, 0, 0.5);
+    // !!!появляется при скроле
+}
+
+.menu {
+    padding: 10px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    &__btn {
+        display: none;
+    }
+
+    &__logo-link {}
+
+    &__logo {
+        width: 57px;
+        height: 95px;
+        object-fit: cover;
+    }
+
+    &__box {
+        text-shadow: 1px 1px 2px $black1;
+    }
+
+    &__items {
+        display: inline-flex;
+        // justify-content: space-between;
+        margin-right: 20px;
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+    }
+
+    &__link {
+        font-size: 18px;
+        font-weight: 400;
+        transition: color 0.5s;
+        outline-color: $black;
+        outline-offset: 5px;
+        color: $white;
+        // задал всем кнопкам отдельно и бем блоку колар
+
+
+        &:focus {
+            color: $focus;
+        }
+
+        &:hover {
+            border-bottom: 2px solid $hover;
+        }
+
+        &:active {
+            color: $active;
+        }
+    }
+
+    &__record {
+        padding: 10px 15px;
+        border: 1px solid $white;
+        font-size: 18px;
+        color: $white;
+    }
+
+    &__link--active {
+        border-bottom: 2px solid $hover;
+    }
+}
+
+.logo {}
+
+.logo-link {}
+
+.intro {
+    &__inner {
+        height: 100vh;
+        background-image: url('images/header-bg.jpg');
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 400;
+    }
+
+    &__title {
+        color: rgba(255, 255, 255, 0.9215686275);
+        font-size: 39px;
+        margin-bottom: 60px;
+        max-width: 800px;
+        line-height: 1.2;
+        text-shadow: 1px 1px 2px $black1;
+        padding: 0 15px;
+    }
+
+    &__link {
+        padding: 12px 36px;
+        border: 1px solid $hover;
+        color: $white;
+        font-size: 20px;
+        background: $hover;
+        text-shadow: 1px 1px 2px $black1;
+        display: flex;
+        max-width: 195px;
+        margin: 0 auto;
+    }
+}
+
+
+
+/*медия всегда должны быть в низу */
+
+
+/*
+
+&__link {
+    color: $title;
+    font-family: $;
+    font-size: 15px;
+    line-height: 1;
+    font-weight: 700;
+    outline-color: #000000;
+    outline-offset: 5px;
+    transition: color 0.5s;
+    &:focus {
+        color: $green;
+    }
+
+    &:hover {
+        color: $ac;
+    }
+
+    &--active {
+        color: $ac;
+    }
+}
+
+*/
+
+/*.video {
+    height: 425px;
+    max-width: 1185px;
+    display: flex;
+    justify-content: center;
+    background-position: center;
+    position: relative;
+    opacity: 1;
+    transition: opacity 0.7s,
+        border 0.5s;
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    &:focus {
+        outline: solid $ac;
+    }
+
+    &:hover {
+        opacity: 0.4;
+        border: 2px solid $black;
+    }
+
+    &:active {
+        color: $active;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-image: url('../images/play.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100px;
+        width: 100px;
+    }
+}*/
