@@ -44,17 +44,33 @@ body {
 }
 
 .container {
-    max-width: 1800px;
+    max-width: 1830px;
     margin: 0 auto;
     padding: 0 15px;
+
+    &--sm {
+        max-width: 1430px;
+    }
 }
 
+
+
 .title {
-    // font-size: 36px;
-    // text-align: center;
-    // letter-spacing: 0.04em;
-    // text-transform: uppercase;
-    // color: $black3;
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: inline-block;
+    position: relative;
+
+    &::before {
+        content: "";
+        border-bottom: 4px solid $hover;
+        position: absolute;
+        top: 40px;
+        right: 0;
+        height: 10px;
+        width: 100%;
+    }
 
     @media (max-width: 1200px) {
         font-size: 34px;
@@ -109,6 +125,14 @@ body {
             padding: $padding-576 0;
         }
     }
+}
+
+@function max($numbers...) {
+    @return m#{a}x(#{$numbers});
+}
+
+@function min($numbers...) {
+    @return m#{i}n(#{$numbers});
 }
 
 // footer__link--indent
