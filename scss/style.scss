@@ -10,7 +10,7 @@
     left: 0;
     right: 0;
     z-index: 100;
-    // background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     // !!!появляется при скроле
 }
 
@@ -281,25 +281,25 @@
     }
 
     &__items {
-        // width: 100%;
         color: #000;
-
     }
 
     &__item {
-        // width: 100%;
         display: flex;
-        // justify-content: space-between;
-        // padding: 0;
         position: relative;
-        // margin: 20px 0;
         margin-bottom: 20px;
+        background-color: $white;
+        font-size: 17px;
+        font-weight: 500;
+        white-space: nowrap;
+        padding-right: 5px;
     }
 
-    &__item div {
+    &__item p {
         width: 100%;
         border-bottom: dotted 2px #999;
         clear: both;
+        margin-left: 5px;
         // margin-bottom: 7px;
         // position: absolute;
         // top: 12px;
@@ -308,15 +308,7 @@
         margin-bottom: 4px;
     }
 
-    &__item p {
-        background-color: $white;
-        // padding: 0 10px 0 0;
-        font-size: 17px;
-        font-weight: 500;
-        white-space: nowrap;
-        padding-right: 5px;
-        // margin: 0;
-    }
+    &__item p {}
 
     &__item span {
         padding: 0 0 0 5px;
