@@ -344,51 +344,52 @@
     </main>
 
     <footer class="footer">
-        <div class="footer__inner">
-            <div class="map"></div>
-            <div class="contacts">
-                <a class="contacts__logo-link logo-link" href="#">
-
-                    <source srcset="images/header-logo.webp" type="image/webp"><img class="contacts__logo logo"
-                        src="images/header-logo.png" alt="logo">
+        <section class="footer__seaction">
+            <div class="footer__inner">
+                <div class="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2550.519767886701!2d28.68104061165878!3d50.26355292786788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472c659edf680cfb%3A0xb545db5d980acf4b!2sBlack%20Peppers%20Barbershop!5e0!3m2!1sru!2sua!4v1603051030200!5m2!1sru!2sua"
+                        frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"
+                        height="535px" width="1150px"></iframe>
+                </div>
+                <div class="contacts">
+                    <a class="contacts__logo-link logo-link" href="#">
+                        <img class="contacts__logo logo" src="images/footer-logo.png" alt="logo">
+                    </a>
                     <div class="contacts__inner">
-                        <div class="contacts__left">
-                            <address class="contacts__address">
+                        <div class="contact__list">
+                            <address class="contacts__item">
                                 <h2 class="contacts__title">
                                     Адреса
                                 </h2>
-                                <div class="contacts__text">
-                                    <p>
-                                        вулиця Київська, 75,
-                                    </p>
-                                    <p>
-                                        Житомир,
-                                    </p>
-                                    <p>
-                                        Житомирська область
-                                    </p>
-                                </div>
+                                <p>
+                                    вулиця Київська, 75,
+                                </p>
+                                <p>
+                                    Житомир,
+                                </p>
+                                <p>
+                                    Житомирська область
+                                </p>
                             </address>
-                            <div class="contacts__item">
-                                <h2 class="contacts__title">
-                                    Телефон
-                                </h2>
-                                <a class="contacts__link" href="tel:+380 96 042 0595">+380 96 042 0595</a>
-                            </div>
-                        </div>
-                        <div class="contacts__right">
                             <div class="contacts__item">
                                 <h2 class="contacts__title">
                                     Години роботи
                                 </h2>
-                                <div class="contacts__text">
-                                    <p>
-                                        Понеділок - Неділя
-                                    </p>
-                                    <p>
-                                        9:00 - 20:00
-                                    </p>
-                                </div>
+                                <p>
+                                    Понеділок - Неділя
+                                </p>
+                                <p>
+                                    9:00 - 20:00
+                                </p>
+                            </div>
+                            <div class="contacts__item">
+                                <h2 class="contacts__title">
+                                    Телефон
+                                </h2>
+                                <a class="contacts__link" href="tel:+380 96 042 0595">
+                                    +380 96 042 0595
+                                </a>
                             </div>
                             <div class="contacts__item">
                                 <h2 class="contacts__title">
@@ -397,63 +398,26 @@
                                 <ul class="social">
                                     <li class="social__item">
                                         <a class="social__link" href="#">
-                                            <!-- пнг переделать в свг если получится -->
-                                            <picture>
-                                                <source srcset="images/facebook.webp" type="image/webp"><img
-                                                    class="social__img" src="images/facebook.png" alt="facebook">
-                                            </picture>
+                                            <img class="social__img" src="images/facebook.png" alt="facebook">
                                         </a>
                                         <a class="social__link" href="#">
-                                            <picture>
-                                                <source srcset="images/telegram.webp" type="image/webp"><img
-                                                    class="social__img" src="images/telegram.png" alt="telegram">
-                                            </picture>
+                                            <img class="social__img" src="images/telegram.png" alt="telegram">
                                         </a>
                                         <a class="social__link" href="#">
-                                            <picture>
-                                                <source srcset="images/instagram.webp" type="image/webp"><img
-                                                    class="social__img" src="                                        </a>
+                                            <img class="social__img" src="images/instagram.png" alt="instagram">
+                                        </a>
+                                        <!-- пнг переделать в свг если получится -->
                                     </li>
                                 </ul>
                             </div>
-
-
-
                         </div>
-                    </div>
-                </a>
+                    </div> 
+                </div>
             </div>
-        </div>
-
+        </section>
     </footer>
 
-
-    <!--
-<a class=" video" data-fancybox style="background-image: url('images/video-bg.jpg')"
-                                                    href="https://www.youtube.com/watch?v=Y2vZlSbw3iA">
-                                                <span class="sr-only">play video</span>
-                                        </a>
-                                        -->
-
-                                        <!--
-  <form class="footer-top__form">
-      <label class="sr-only" for="email">
-          Enter your email
-      </label>
-      <input class="footer-top__input" id="email-input" type="email" name="email" placeholder="Your Email" required
-          oninvalid="this.setCustomValidity('fill in this field!')">
-      <button class="footer-top__btn" type="submit">
-          <svg class="footer__svg" xmlns="http://www.w3.org/2000/svg" fill="#ffffff"
-              xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="17" viewBox="0 0 20 17">
-              <image id="send" width="20" height="17"
-                  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAARCAYAAADdRIy+AAABW0lEQVQ4jaWUTytEURjGf1NiJDTjfzNlYWFhKysbvoaV72LpOyhSIikmyUiztRKmsBYz2SgNOz169d66/5sZT91u9557fud5n/fcU5B0ApwBF8Ab/5QBO8AI8AAY/Bi47xsrqaWo2pL2Ja1LGpRELxcOSNOPpIakTUmVbqFWchuYSViP6g6oAQdAMzEaK/krxV2W3j2ONUnFLId7wAJQAqaAsjUrsXJSDcDm1oGXYLTwFySMAhNeukHngKo/230emAbGgaEYuulxHAK3ATBPw76YOV8EloFVYAUYCM2zPbwVfmGrT7qTwGUFmHWXVR+3aoohWAu4BI4sBnu5DSx5hmWfVMpxHOjJM6xFfgRJ3xkdTVNH0rWkDUljaV02h5+eU55egXMvq57zXSTUND0DO8Ap8Jgy3hXQDosbYNdPoY9uQGFgsK+sWwawsq56gcSBdmxZLrYxrcT+BfwCdYhXWkZ0abIAAAAASUVORK5CYII=" />
-          </svg>
-          <span class="sr-only">send message button</span>
-      </button>
-  </form>
-
--->
-                                        <script src="js/main.min.js"></script>
+    <script src="js/main.min.js"></script>
 </body>
 
 </html>
