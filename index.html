@@ -19,18 +19,18 @@
 -->
 
 <body>
-
     <header class="header">
         <nav class="menu">
-            <a class="menu__logo-link logo-link" href="#">
-                <img class="menu__logo logo" src="images/header-logo.png" alt="logo">
-            </a>
             <button class="menu__btn" type="button">
                 <span></span>
                 <span class="sr-only">open menu</span>
             </button>
-            <div class="menu__box">
-                <ul class="menu__items">
+            <!-- <div class="menu__box"> -->
+            <a class="menu__logo-link logo-link" href="#">
+                <img class="menu__logo logo" src="images/header-logo.png" alt="logo">
+            </a>
+            <div class="menu__items">
+                <ul class="menu__list">
                     <li class="menu__item">
                         <a class="menu__link menu__link--active" href="#">
                             Головна
@@ -62,11 +62,117 @@
                         </a>
                     </li>
                 </ul>
+                <div class="mobile-contact">
+                    <a class="mobile-contact__link" href="tel:+380960420595">
+                        +380 96 042 0595
+                    </a>
+                    <div class="mobile-contact__text">
+                        <p>
+                            вулиця Київська, 75, Житомир, Житомирська
+                            область
+                        </p>
+                    </div>
+                    <ul class="social">
+                        <li class="social__item">
+                            <a class="social__link" href="#">
+                                <img class="social__img" src="images/facebook.png" alt="facebook">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link" href="#">
+                                <img class="social__img" src="images/telegram.png" alt="telegram">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link" href="#">
+                                <img class="social__img" src="images/instagram.png" alt="instagram">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <a class="menu__record link" href="#">
+                Онлайн запис
+            </a>
+        </nav>
+        <!-- <div class="mobile-menu">
+            <nav class="menu">
+                <button class="menu__btn" type="button">
+                    <span></span>
+                    <span class="sr-only">open menu</span>
+                </button>
+                <!-- <div class="menu__box"> --
+                <a class="menu__logo-link logo-link" href="#">
+                    <img class="menu__logo logo" src="images/header-logo.png" alt="logo">
+                </a>
+                <div class="menu__items">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a class="menu__link menu__link--active" href="#">
+                                Головна
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#service">
+                                Про нас
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#collections">
+                                Наша команда
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#products">
+                                Галерея
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#about">
+                                Прайс-лист
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#blog">
+                                Контакти
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="mobile-contact">
+                        <a class="mobile-contact__link" href="tel:+380960420595">
+                            +380 96 042 0595
+                        </a>
+                        <div class="mobile-contact__text">
+                            <p>
+                                вулиця Київська, 75, Житомир, Житомирська
+                                область
+                            </p>
+                        </div>
+                        <ul class="social">
+                            <li class="social__item">
+                                <a class="social__link" href="#">
+                                    <img class="social__img" src="images/facebook.png" alt="facebook">
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a class="social__link" href="#">
+                                    <img class="social__img" src="images/telegram.png" alt="telegram">
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a class="social__link" href="#">
+                                    <img class="social__img" src="images/instagram.png" alt="instagram">
+                                </a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
                 <a class="menu__record link" href="#">
                     Онлайн запис
                 </a>
-            </div>
-        </nav>
+            </nav>
+        </div> -->
     </header>
 
     <main class="main">
@@ -257,6 +363,7 @@
                 </ul>
             </section>
             <!-- section--bem сделать снипед -->
+
             <section class="price section--bem">
                 <div class="container container--sm">
                     <h2 class="price__title title">
@@ -272,39 +379,53 @@
                     <div class="price__wrapper">
                         <div class="price__left">
                             <h3 class="price__subtitle">
-                                основні послуги
+                                <div>
+                                    основні послуги
+                                </div>
                             </h3>
                             <div class="price__items">
                                 <div class="price__item">
-                                    Стрижка чоловіча
+                                    <div>
+                                        Стрижка чоловіча
+                                    </div>
                                     <p></p><span>350 | 400 грн</span>
                                 </div>
                                 <div class="price__item">
-                                    Стрижка дитяча до 12р.
+                                    <div>
+                                        Стрижка дитяча до 12р.
+                                    </div>
                                     <p></p><span>250 | 300 грн</span>
                                 </div>
                                 <div class="price__item">
-                                    Стрижка підліткова 12-14р.
+                                    <div>
+                                        Стрижка підліткова 12-14р.
+                                    </div>
                                     <p></p><span>300 | 350 грн</span>
                                 </div>
                                 <div class="price__item">
-                                    Стрижка машинкою
+                                    <div> Стрижка машинкою </div>
                                     <p></p><span>300 | 350 грн</span>
                                 </div>
                                 <div class="price__item">
-                                    Традиційне гоління бороди(голови)
+                                    <div>
+                                        Традиційне гоління бороди(голови)
+                                    </div>
                                     <p></p><span> 250 грн</span>
                                 </div>
                                 <div class="price__item">
-                                    Стрижка бороди
+                                    <div>
+                                        Стрижка бороди
+                                    </div>
                                     <p></p><span>250 | 300 грн</span>
                                 </div>
                                 <div class="price__item">
-                                    Стрижка вусів
-                                    <p></p><span> 100 грн</span>
+                                    <div>
+                                        Стрижка вусів
+                                    </div>
+                                    <p></p><span>100 грн</span>
                                 </div>
                                 <div class="price__item">
-                                    Камуфлювання сивини
+                                    <div> Камуфлювання сивини</div>
                                     <p></p><span>250 грн</span>
                                 </div>
                             </div>
@@ -316,15 +437,21 @@
                                     комплексні послуги
                                 </h3>
                                 <div class="price__item">
-                                    “Батько та син” (стрижка чоловіча та дитяча до 12р.)
+                                    <div>
+                                        “Батько та син” (стрижка чоловіча та дитяча до 12р.)
+                                    </div>
                                     <p></p><span>550 | 600 грн</span>
                                 </div>
                                 <div class="price__item">
-                                    Стрижка чоловіча "Друг + Друг"
+                                    <div>
+                                        Стрижка чоловіча "Друг + Друг"
+                                    </div>
                                     <p></p><span>600 | 700 грн</span>
                                 </div>
                                 <div class="price__item">
-                                    Стрижка чоловіча та Стрижка бороди
+                                    <div>
+                                        Стрижка чоловіча та Стрижка бороди
+                                    </div>
                                     <p></p><span>550 | 600 грн</span>
                                 </div>
                             </div>
@@ -333,7 +460,9 @@
                                     Додаткові послуги
                                 </h3>
                                 <div class="price__item">
-                                    Миття голови та укладка
+                                    <div>
+                                        Миття голови та укладка
+                                    </div>
                                     <p></p><span>100 грн</span>
                                 </div>
                             </div>
@@ -342,22 +471,20 @@
                 </div>
             </section>
     </main>
-
+    <!-- 
     <footer class="footer">
         <section class="footer__seaction">
             <div class="footer__inner">
-                <div class="map">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2550.519767886701!2d28.68104061165878!3d50.26355292786788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472c659edf680cfb%3A0xb545db5d980acf4b!2sBlack%20Peppers%20Barbershop!5e0!3m2!1sru!2sua!4v1603051030200!5m2!1sru!2sua"
-                        frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"
-                        height="535px" width="1150px"></iframe>
-                </div>
+                <iframe class="map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2550.519767886701!2d28.68104061165878!3d50.26355292786788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472c659edf680cfb%3A0xb545db5d980acf4b!2sBlack%20Peppers%20Barbershop!5e0!3m2!1sru!2sua!4v1603051030200!5m2!1sru!2sua"
+                    frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
                 <div class="contacts">
                     <a class="contacts__logo-link logo-link" href="#">
                         <img class="contacts__logo logo" src="images/footer-logo.png" alt="logo">
                     </a>
                     <div class="contacts__inner">
-                        <div class="contact__list">
+                        <div class="contacts__list">
                             <address class="contacts__item">
                                 <h2 class="contacts__title">
                                     Адреса
@@ -400,22 +527,27 @@
                                         <a class="social__link" href="#">
                                             <img class="social__img" src="images/facebook.png" alt="facebook">
                                         </a>
+                                    </li>
+                                    <li class="social__item">
                                         <a class="social__link" href="#">
                                             <img class="social__img" src="images/telegram.png" alt="telegram">
                                         </a>
+                                    </li>
+                                    <li class="social__item">
                                         <a class="social__link" href="#">
                                             <img class="social__img" src="images/instagram.png" alt="instagram">
                                         </a>
-                                        <!-- пнг переделать в свг если получится -->
+                                    </li>
+                                    <!-- пнг переделать в свг если получится --
                                     </li>
                                 </ul>
                             </div>
                         </div>
-                    </div> 
+                    </div>
                 </div>
             </div>
         </section>
-    </footer>
+    </footer> -->
 
     <script src="js/main.min.js"></script>
 </body>

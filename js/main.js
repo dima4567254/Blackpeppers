@@ -1,6 +1,8 @@
 $(function name(params) {
 
-
+    $('.menu__btn').on('click', function () {
+        $('.menu__items').toggleClass('menu__items--active');
+    });
 
     /*	$(".menu a").on("click", function (event) {
     	    event.preventDefault();
