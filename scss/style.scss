@@ -10,12 +10,10 @@
     left: 0;
     right: 0;
     z-index: 100;
-    background-color: rgba(0, 0, 0, 0.5);
+}
 
-    // !!!появляется при скроле
-    @media (max-width: 768px) {
-        background: rgba(29, 29, 29, 0.93);
-    }
+.header-fixed {
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .menu {
@@ -25,13 +23,9 @@
     align-items: center;
 
     @media (max-width: 992px) {
-        // display: none;
         padding: 10px 20px;
-        background: rgba(29, 29, 29, 0.93);
-
-        // justify-content: start;
+        background-color: rgba(29, 29, 29, 0.93);
     }
-
 
     &__btn {
         display: none;
@@ -47,21 +41,14 @@
             padding: 0;
             z-index: 10;
             cursor: pointer;
-            // z-index: 998;
             width: 40px;
             height: 38px;
-            border: 2px solid #c39f76;
-            // margin-left: 30px;
-            // display: block;
-
-            @media (max-width: 576px) {
-                // margin-bottom: 20px;
-            }
+            border: 2px solid $hover;
 
             span {
                 height: 2px;
                 width: 80%;
-                background-color: silver;
+                background-color: $silver;
             }
 
             &::before,
@@ -70,7 +57,7 @@
                 content: '';
                 height: 2px;
                 width: 80%;
-                background-color: silver;
+                background-color: $silver;
             }
 
             &::before {
@@ -84,12 +71,25 @@
         }
     }
 
+    .menu__btn.menu__items--active span {
+        transform: scale(0);
+    }
+
+    .menu__btn.menu__items--active:before {
+        transform: rotate(45deg);
+        top: 16px;
+    }
+
+    .menu__btn.menu__items--active::after {
+        transform: rotate(-45deg);
+        bottom: 15px;
+    }
+
     &__logo-link {
         margin-right: 20px;
 
         @media (max-width: 1200px) {
             display: none;
-            // margin-right: 0px;
         }
     }
 
@@ -99,36 +99,20 @@
         object-fit: cover;
     }
 
-    &__box {
-        text-shadow: 1px 1px 2px $black1;
-        // !!! нет такого
-    }
-
-
-
     &__items {
         margin-left: auto;
-        // можно без авто
+        // !!!можно без авто
         margin-right: 20px;
 
-        // @media (max-width: 1200px) {
-        //     display: none;
-        // }
-
         @media (max-width: 992px) {
-            // margin-right: 0;
-            // display: inline-flex;
             transform: translateY(-200%);
             position: absolute;
             top: 68px;
             width: 100%;
             left: 0;
-
-            // align-items: center;
             z-index: 5;
-            background-color: #edf1f4;
             transition: transform 1s;
-            background: rgba(29, 29, 29, 0.93);
+            background-color: rgba(29, 29, 29, 0.93);
             text-transform: uppercase;
 
             &.menu__items--active {
@@ -141,9 +125,8 @@
         display: flex;
         align-items: center;
 
-
         @media (max-width: 992px) {
-            border-bottom: 2px solid #c39f76;
+            border-bottom: 2px solid $hover;
             width: 100%;
             padding: 25px 0;
             flex-direction: column;
@@ -151,13 +134,17 @@
     }
 
     &__item {
+        text-shadow: 1px 1px 2px $black1;
+
+        @media (max-width: 992px) {
+            padding: 10px 0;
+        }
+
         &:not(:last-child) {
             margin-right: 20px;
 
-
             @media (max-width: 992px) {
                 margin-right: 0px;
-                margin-bottom: 20px;
             }
         }
 
@@ -172,7 +159,11 @@
         transition: color 0.5s;
         outline-offset: 5px;
         color: $white;
-        // задал всем кнопкам отдельно и бем блоку колар
+
+        @media (max-width: 992px) {
+            width: 100%;
+            display: block;
+        }
 
         &:focus {
             color: $focus;
@@ -180,6 +171,10 @@
 
         &:hover {
             border-bottom: 2px solid $hover;
+
+            @media (max-width: 992px) {
+                border-bottom: 2px solid transparent;
+            }
         }
 
         &:active {
@@ -190,11 +185,24 @@
     &__record {
         padding: 10px 15px;
         border: 1px solid $white;
-        color: $white;
+        // color: $white;
+        transition: color 0.5s;
+
+        &:focus {
+            color: $focus;
+        }
+
+        &:hover {
+            background-color: $ac;
+        }
+
+        &:active {
+            color: $active;
+        }
 
         @media (max-width: 992px) {
-            border: 2px solid #c39f76;
-            color: #c39f76;
+            border: 2px solid $hover;
+            color: $hover;
             text-decoration: none;
             padding: 11px 20px;
             font-weight: 500;
@@ -203,42 +211,12 @@
 
     &__link--active {
         border-bottom: 2px solid $hover;
-    }
-}
 
-.mobile-contact {
-    display: none;
-
-    @media (max-width: 992px) {
-        display: block;
-        padding: 20px 30px;
-        color: #ACACAC;
-        width: 100%;
-    }
-
-
-    // ширена похоже на дебаг
-
-    &__link {
-        display: block;
-        margin-bottom: 15px;
-    }
-
-    &__text {
-        margin-bottom: 15px;
-
-        @media (max-width: 576px) {
-            font-size: 16px;
+        @media (max-width: 992px) {
+            border-bottom: 2px solid transparent;
         }
     }
 }
-
-
-
-
-.logo {}
-
-.logo-link {}
 
 .intro {
     &__inner {
@@ -283,23 +261,34 @@
     &__link {
         padding: 12px 36px;
         border: 1px solid $hover;
-        color: $white;
         font-size: 20px;
-        background: $hover;
+        background-color: $hover;
         text-shadow: 1px 1px 2px $black1;
         display: flex;
         max-width: 230px;
         margin: 0 auto;
+        transition: color 0.5s;
+
+        &:focus {
+            color: $focus;
+        }
+
+        &:hover {
+            background-color: transparent;
+            color: $ac;
+        }
+
+        &:active {
+            color: $active;
+        }
 
         @media (max-width: 576px) {
             display: none;
         }
-
     }
 }
 
 .about {
-    padding: 40px 0;
 
     &__inner {
         display: flex;
@@ -314,17 +303,19 @@
 
     &__box {
         margin-right: 30px;
+
+        @media (max-width: 768px) {
+            margin-right: 0;
+        }
     }
 
     &__title {
         font-size: 40px;
         font-weight: 600;
         text-transform: uppercase;
-        // border-bottom: 4px solid #C39F76;
         margin-bottom: 60px;
         display: inline-block;
 
-        // position: relative;
         @media (max-width: 1200px) {
             font-size: 36px;
             margin-bottom: 50px;
@@ -350,7 +341,6 @@
         font-weight: 400;
         line-height: 1.7;
 
-        // text-indent: 15px;
         @media (max-width: 768px) {
             margin-bottom: 20px;
         }
@@ -376,22 +366,17 @@
         }
 
         @media (max-width: 768px) {
-            // width: 530px;
             max-width: 100%;
             height: 350px;
         }
 
         @media (max-width: 576px) {
-            // width: 430px;
             height: 300px;
         }
-
-        // возможно сделать оберку с макс ширеной
     }
 }
 
 .team {
-    // padding: 40px 0;
     text-align: center;
 
     &__title {
@@ -453,12 +438,12 @@
         padding: 15px 0;
         font-size: 20px;
         font-weight: 600;
-        color: #c39f76;
+        color: $hover;
     }
 
     &__text {
         text-align: center;
-        // !!!
+        // типо текст center
         padding-bottom: 20px;
         color: $silver;
         font-weight: 500;
@@ -473,7 +458,6 @@
         margin-bottom: 60px;
         color: $white;
 
-        // margin-top: 40px;
         @media (max-width: 1200px) {
             font-size: 36px;
             margin-bottom: 50px;
@@ -505,10 +489,6 @@
         justify-content: center;
     }
 
-    &__item {}
-
-    &__link {}
-
     &__img {
         height: 496px;
         width: 331px;
@@ -529,16 +509,26 @@
 }
 
 .price {
-
     &__title {
-        margin-bottom: 60px;
-        margin-top: 40px;
-        text-align: center;
         max-width: 285px;
-        //   подумать потом может без этого.
-        margin: 40px auto 60px auto;
+        margin: 0 auto 60px auto;
         display: flex;
-        // переделать
+
+        @media (max-width: 1200px) {
+            margin-bottom: 55px;
+        }
+
+        @media (max-width: 992px) {
+            margin-bottom: 50px;
+        }
+
+        @media (max-width: 768px) {
+            margin-bottom: 40px;
+        }
+
+        @media (max-width: 576px) {
+            margin-bottom: 30px;
+        }
     }
 
     &__text {
@@ -589,62 +579,56 @@
     }
 
     &__subtitle {
-        background: $black3;
+        background-color: $black3;
         font-weight: 500;
         text-transform: uppercase;
         padding: 7px 10px;
-        color: $white;
         display: inline-flex;
         margin-bottom: 20px;
     }
 
-    &__items {}
+   
+    &__items {
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
 
     &__item {
         display: flex;
         position: relative;
-        margin-bottom: 20px;
         background-color: $white;
         font-size: 17px;
         font-weight: 500;
         white-space: nowrap;
         padding-right: 5px;
 
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+
         @media (max-width: 1400px) {
             font-size: 16px;
         }
 
         @media (max-width: 576px) {
-            white-space: inherit;
-            justify-content: space-between;
-            // width: 50%;
+            font-size: 10px;
         }
     }
 
-    &__item div {
-        @media (max-width: 576px) {
-            width: 50%;
-        }
-    }
-
+    //!!! повысить все до 1400
     &__item p {
         width: 100%;
-        border-bottom: dotted 2px #999;
+        border-bottom: dotted 2px $dotted;
         clear: both;
         margin-left: 5px;
         margin-bottom: 4px;
-
-        @media (max-width: 576px) {
-            display: none;
-        }
     }
-
-
 
     &__item span {
         padding: 0 0 0 5px;
         background-color: $white;
-        color: #d2ab73;
+        color: $brown2;
         font-weight: 600;
         position: absolute;
         top: 4px;
@@ -655,10 +639,7 @@
         }
 
         @media (max-width: 576px) {
-            // display: none;
-            position: inherit;
-            width: 50%;
-            text-align: end;
+            font-size: 10px;
         }
     }
 }
@@ -667,22 +648,54 @@
 .footer {
     &__inner {
         display: flex;
+
+        @media (max-width: 768px) {
+            display: block;
+        }
     }
 }
 
 .map {
     width: 1150px;
-    height: 550px;
+
+    @media (max-width: 1400px) {
+        width: 60%;
+    }
+
+    @media (max-width: 992px) {
+        width: 50%;
+    }
+
+    @media (max-width: 768px) {
+        width: 100%;
+        height: 350px;
+    }
+
+    @media (max-width: 576px) {
+        height: 300px;
+    }
 }
 
 .contacts {
     width: 40%;
-    padding: 10px;
+    padding: 15px;
     background-color: $black1;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+
+    @media (max-width: 992px) {
+        width: 50%;
+    }
+
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+
+    @media (max-width: 576px) {
+        padding: 20px 15px;
+    }
 
     &__logo-link {
         margin-bottom: 35px;
@@ -694,12 +707,15 @@
     }
 
     &__inner {
-        // width: 40%;
         display: flex;
         justify-content: center;
         flex-direction: column;
         align-items: center;
         padding: 10px;
+
+        @media (max-width: 576px) {
+            padding: 0;
+        }
     }
 
     &__list {
@@ -713,15 +729,10 @@
 
     &__item {
         color: $silver;
-        // margin-bottom: 20px;
         width: 50%;
-        padding: 0 5px;
-        font-size: 12px;
 
-
-
-        &:not(:last-child) {
-            // margin-right: 30px;
+        @media (max-width: 576px) {
+            width: 100%;
         }
     }
 
@@ -733,14 +744,6 @@
         color: $brown;
         font-weight: 600;
         margin-bottom: 10px;
-
-    }
-
-    &__text {
-        // color: $silver;
-        // max-width: 200px;
-        // width: 100%;
-
     }
 
     &__link {
@@ -759,30 +762,4 @@
             color: $active;
         }
     }
-
 }
-
-.social__item {}
-
-// .logo-link {}
-// .logo {}
-
-
-
-.social {
-    display: flex;
-    gap: 10px;
-
-    &__item {
-        &:not(:last-child) {
-            // margin-right: 5px;
-        }
-    }
-
-}
-
-
-
-.social__link {}
-
-.social__img {}

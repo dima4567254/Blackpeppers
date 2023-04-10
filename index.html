@@ -1,23 +1,17 @@
 <!DOCTYPE html>
-<html lang="ua">
+<html lang="uk">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/header-logo.png" type="image/x-icon">
     <link rel="shortcut icon" href="https://yoursite.ru/favicon.png" type="image/x-icon">
     <title>Blackpeppers</title>
     <link rel="stylesheet" href="css/style.min.css">
 </head>
-
-
-<!--
-    1 npm init
-    2 npm install
-
--->
-
+<!-- переименовать картинки нормально для без -->
+<!-- пнг переделать в свг если получится 411-->
 <body>
     <header class="header">
         <nav class="menu">
@@ -25,460 +19,336 @@
                 <span></span>
                 <span class="sr-only">open menu</span>
             </button>
-            <!-- <div class="menu__box"> -->
             <a class="menu__logo-link logo-link" href="#">
                 <img class="menu__logo logo" src="images/header-logo.png" alt="logo">
             </a>
             <div class="menu__items">
                 <ul class="menu__list">
                     <li class="menu__item">
-                        <a class="menu__link menu__link--active" href="#">
+                        <a class="menu__link menu__link--active" href="#intro">
                             Головна
                         </a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="#service">
+                        <a class="menu__link" href="#about">
                             Про нас
                         </a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="#collections">
+                        <a class="menu__link" href="#team">
                             Наша команда
                         </a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="#products">
+                        <a class="menu__link" href="#gallery">
                             Галерея
                         </a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="#about">
+                        <a class="menu__link" href="#price">
                             Прайс-лист
                         </a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="#blog">
+                        <a class="menu__link" href="#contact">
                             Контакти
                         </a>
                     </li>
                 </ul>
-                <div class="mobile-contact">
-                    <a class="mobile-contact__link" href="tel:+380960420595">
-                        +380 96 042 0595
-                    </a>
-                    <div class="mobile-contact__text">
-                        <p>
-                            вулиця Київська, 75, Житомир, Житомирська
-                            область
-                        </p>
-                    </div>
-                    <ul class="social">
-                        <li class="social__item">
-                            <a class="social__link" href="#">
-                                <img class="social__img" src="images/facebook.png" alt="facebook">
-                            </a>
-                        </li>
-                        <li class="social__item">
-                            <a class="social__link" href="#">
-                                <img class="social__img" src="images/telegram.png" alt="telegram">
-                            </a>
-                        </li>
-                        <li class="social__item">
-                            <a class="social__link" href="#">
-                                <img class="social__img" src="images/instagram.png" alt="instagram">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
             </div>
-            <a class="menu__record link" href="#">
+            <a class="menu__record link" href="https://n803041.alteg.io">
                 Онлайн запис
             </a>
         </nav>
-        <!-- <div class="mobile-menu">
-            <nav class="menu">
-                <button class="menu__btn" type="button">
-                    <span></span>
-                    <span class="sr-only">open menu</span>
-                </button>
-                <!-- <div class="menu__box"> --
-                <a class="menu__logo-link logo-link" href="#">
-                    <img class="menu__logo logo" src="images/header-logo.png" alt="logo">
-                </a>
-                <div class="menu__items">
-                    <ul class="menu__list">
-                        <li class="menu__item">
-                            <a class="menu__link menu__link--active" href="#">
-                                Головна
-                            </a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__link" href="#service">
-                                Про нас
-                            </a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__link" href="#collections">
-                                Наша команда
-                            </a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__link" href="#products">
-                                Галерея
-                            </a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__link" href="#about">
-                                Прайс-лист
-                            </a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__link" href="#blog">
-                                Контакти
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="mobile-contact">
-                        <a class="mobile-contact__link" href="tel:+380960420595">
-                            +380 96 042 0595
-                        </a>
-                        <div class="mobile-contact__text">
-                            <p>
-                                вулиця Київська, 75, Житомир, Житомирська
-                                область
-                            </p>
-                        </div>
-                        <ul class="social">
-                            <li class="social__item">
-                                <a class="social__link" href="#">
-                                    <img class="social__img" src="images/facebook.png" alt="facebook">
-                                </a>
-                            </li>
-                            <li class="social__item">
-                                <a class="social__link" href="#">
-                                    <img class="social__img" src="images/telegram.png" alt="telegram">
-                                </a>
-                            </li>
-                            <li class="social__item">
-                                <a class="social__link" href="#">
-                                    <img class="social__img" src="images/instagram.png" alt="instagram">
-                                </a>
-                            </li>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <a class="menu__record link" href="#">
-                    Онлайн запис
-                </a>
-            </nav>
-        </div> -->
     </header>
 
     <main class="main">
-        <section class="intro" id="about">
+        <section class="intro" id="intro">
             <div class="intro__inner" style="background-image: url('images/header-bg.jpg');">
                 <div class="intro__box">
                     <h1 class="intro__title">
                         BlackPeppers barbershop & tattoo
                     </h1>
-                    <a class="intro__link link" href="#">
+                    <a class="intro__link link" href="https://n803041.alteg.io">
                         Онлайн запис
                     </a>
                 </div>
             </div>
+        </section>
 
-            <section class="about">
-                <div class="container container--sm">
-                    <div class="about__inner">
-                        <div class="about__box">
-                            <h1 class="about__title title">
-                                ПРО НАС
-                            </h1>
-                            <div class="about__text">
-                                <p>
-                                    Ми надаємо всі види перукарських послуг: від якісних чоловічих укладок до гоління
-                                    бороди. У
-                                    нас приваблива атмосфера і високий рівень сервісу, всі послуги надаються з
-                                    використанням
-                                    найякісніших професійних інструментів, кращої чоловічої косметики для волосся.
-                                </p>
-                            </div>
+        <section class="about section--bem" id="about">
+            <div class="container container--sm">
+                <div class="about__inner">
+                    <div class="about__box">
+                        <h1 class="about__title title">
+                            ПРО НАС
+                        </h1>
+                        <div class="about__text">
+                            <p>
+                                Ми надаємо всі види перукарських послуг: від якісних чоловічих укладок до гоління
+                                бороди. У
+                                нас приваблива атмосфера і високий рівень сервісу, всі послуги надаються з
+                                використанням
+                                найякісніших професійних інструментів, кращої чоловічої косметики для волосся.
+                            </p>
                         </div>
-                        <img class="about__img" src="images/bklyn-owner.jpg" alt="Перукарня">
                     </div>
+                    <img class="about__img" src="images/bklyn-owner.jpg" alt="Перукарня">
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section class="team section--bem">
-                <div class="container container--sm">
-                    <h2 class="team__title title">
-                        Наша команда
-                    </h2>
-                    <ul class="team__items">
-                        <li class="team__item">
-                            <img class="team__img" src="images/team/1.jpg" alt="Сергій">
-                            <h3 class="team__subtitle ">
-                                Сергій
-                            </h3>
-                            <div class="team__text">
-                                Старший барбер
-                            </div>
-                        </li>
-                        <li class="team__item">
-                            <img class="team__img" src="images/team/2.jpg" alt="Даніїл">
-                            <h3 class="team__subtitle ">
-                                Даніїл
-                            </h3>
-                            <div class="team__text">
-                                Старший барбер
-                            </div>
-                        </li>
-                        <li class="team__item">
-                            <img class="team__img" src="images/team/3.jpg" alt="Денис">
-                            <h3 class="team__subtitle ">
-                                Денис
-                            </h3>
-                            <div class="team__text">
-                                Старший барбер
-                            </div>
-                        </li>
-                        <li class="team__item">
-                            <img class="team__img" src="images/team/4.jpg" alt="Махмуд">
-                            <h3 class="team__subtitle ">
-                                Махмуд
-                            </h3>
-                            <div class="team__text">
-                                Барбер
-                            </div>
-                        </li>
-                        <li class="team__item">
-                            <img class="team__img" src="images/team/5.jpg" alt="Сергій">
-                            <h3 class="team__subtitle ">
-                                Сергій
-                            </h3>
-                            <div class="team__text">
-                                Барбер
-                            </div>
-                        </li>
-                        <li class="team__item">
-                            <img class="team__img" src="images/team/6.jpg" alt="Андрій">
-                            <h3 class="team__subtitle ">
-                                Андрій
-                            </h3>
-                            <div class="team__text">
-                                Барбер
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-
-            <section class="gallery section--bem">
-                <h2 class="gallery__title title">
-                    Галерея
+        <section class="team section--bem" id="team">
+            <div class="container container--sm">
+                <h2 class="team__title title">
+                    Наша команда
                 </h2>
-                <ul class="gallery__items">
-                    <li class="gallery__item">
-                        <!-- переименовать картинки нормально для без -->
-                        <a class="gallery__link" href="images/gallery/1.jpg" data-fancybox="gallery">
-                            <img class="gallery__img" src="images/gallery/1.jpg" alt="Спина з лого">
-                        </a>
+                <ul class="team__items">
+                    <li class="team__item">
+                        <img class="team__img" src="images/team/1.jpg" alt="Сергій">
+                        <h3 class="team__subtitle ">
+                            Сергій
+                        </h3>
+                        <div class="team__text">
+                            Старший барбер
+                        </div>
                     </li>
-                    <li class="gallery__item">
-                        <a class="gallery__link" href="images/gallery/2.jpg" data-fancybox="gallery">
-                            <img class="gallery__img" src="images/gallery/2.jpg" alt="Гоління шиї">
-                        </a>
+                    <li class="team__item">
+                        <img class="team__img" src="images/team/2.jpg" alt="Даніїл">
+                        <h3 class="team__subtitle ">
+                            Даніїл
+                        </h3>
+                        <div class="team__text">
+                            Старший барбер
+                        </div>
                     </li>
-                    <li class="gallery__item">
-                        <a class="gallery__link" href="images/gallery/3.jpg" data-fancybox="gallery">
-                            <img class="gallery__img" src="images/gallery/3.jpg" alt="Стрижка за вухами">
-                        </a>
+                    <li class="team__item">
+                        <img class="team__img" src="images/team/3.jpg" alt="Денис">
+                        <h3 class="team__subtitle ">
+                            Денис
+                        </h3>
+                        <div class="team__text">
+                            Старший барбер
+                        </div>
                     </li>
-                    <li class="gallery__item">
-                        <a class="gallery__link" href="images/gallery/4.jpg" data-fancybox="gallery">
-                            <img class="gallery__img" src="images/gallery/4.jpg" alt="Вогняна стрижка">
-                        </a>
+                    <li class="team__item">
+                        <img class="team__img" src="images/team/4.jpg" alt="Махмуд">
+                        <h3 class="team__subtitle ">
+                            Махмуд
+                        </h3>
+                        <div class="team__text">
+                            Барбер
+                        </div>
                     </li>
-                    <li class="gallery__item">
-                        <a class="gallery__link" href="images/gallery/5.jpg" data-fancybox="gallery">
-                            <img class="gallery__img" src="images/gallery/5.jpg" alt="Крісло">
-                        </a>
+                    <li class="team__item">
+                        <img class="team__img" src="images/team/5.jpg" alt="Сергій">
+                        <h3 class="team__subtitle ">
+                            Сергій
+                        </h3>
+                        <div class="team__text">
+                            Барбер
+                        </div>
                     </li>
-                    <li class="gallery__item">
-                        <a class="gallery__link" href="images/gallery/6.jpg" data-fancybox="gallery">
-                            <img class="gallery__img" src="images/gallery/6.jpg" alt="інструменти">
-                        </a>
-                    </li>
-                    <li class="gallery__item">
-                        <a class="gallery__link" href="images/gallery/7.jpg" data-fancybox="gallery">
-                            <img class="gallery__img" src="images/gallery/7.jpg" alt="Килимок">
-                        </a>
-                    </li>
-                    <li class="gallery__item">
-                        <a class="gallery__link" href="images/gallery/8.jpg" data-fancybox="gallery">
-                            <img class="gallery__img" src="images/gallery/8.jpg" alt="Бритва">
-                        </a>
-                    </li>
-                    <li class="gallery__item">
-                        <a class="gallery__link" href="images/gallery/9.jpg" data-fancybox="gallery">
-                            <img class="gallery__img" src="images/gallery/9.jpg" alt="Стрижка машинкою">
-                        </a>
-                    </li>
-                    <li class="gallery__item">
-                        <a class="gallery__link" href="images/gallery/10.jpg" data-fancybox="gallery">
-                            <img class="gallery__img" src="images/gallery/10.jpg" alt="Перед стрижкою">
-                        </a>
-                    </li>
-                    <li class="gallery__item">
-                        <a class="gallery__link" href="images/gallery/11.jpg" data-fancybox="gallery">
-                            <img class="gallery__img" src="images/gallery/11.jpg" alt="Вищипування волосся">
-                        </a>
-                    </li>
-                    <li class="gallery__item">
-                        <a class="gallery__link" href="images/gallery/12.jpg" data-fancybox="gallery">
-                            <img class="gallery__img" src="images/gallery/12.jpg" alt="Масаж голови">
-                        </a>
-                    </li>
-                    <li class="gallery__item">
-                        <a class="gallery__link" href="images/gallery/13.jpg" data-fancybox="gallery">
-                            <img class="gallery__img" src="images/gallery/13.jpg" alt="Порошок для голови">
-                        </a>
-                    </li>
-                    <li class="gallery__item">
-                        <a class="gallery__link" href="images/gallery/14.jpg" data-fancybox="gallery">
-                            <img class="gallery__img" src="images/gallery/14.jpg" alt="Машинка для стрижки волосся">
-                        </a>
-                    </li>
-                    <li class="gallery__item">
-                        <a class="gallery__link" href="images/gallery/15.jpg" data-fancybox="gallery">
-                            <img class="gallery__img" src="images/gallery/15.jpg" alt="Гель">
-                        </a>
-                    </li>
-                    <li class="gallery__item">
-                        <a class="gallery__link" href="images/gallery/16.jpg" data-fancybox="gallery">
-                            <img class="gallery__img" src="images/gallery/16.jpg" alt="паста для укладки волос">
-                        </a>
+                    <li class="team__item">
+                        <img class="team__img" src="images/team/6.jpg" alt="Андрій">
+                        <h3 class="team__subtitle ">
+                            Андрій
+                        </h3>
+                        <div class="team__text">
+                            Барбер
+                        </div>
                     </li>
                 </ul>
-            </section>
-            <!-- section--bem сделать снипед -->
+            </div>
+        </section>
 
-            <section class="price section--bem">
-                <div class="container container--sm">
-                    <h2 class="price__title title">
-                        прайс-лист
-                    </h2>
-                    <div class="price__text">
-                        <p>
-                            Black Peppers Barbershop є тим місцем, де ви зможете зробити сувору коротку або модну
-                            чоловічу стрижку, гладко поголитися, оформити бороду, доглянути за волоссям або обличчям - з
-                            відмінним результатом і без непотрібного пафосу.
-                        </p>
-                    </div>
-                    <div class="price__wrapper">
-                        <div class="price__left">
-                            <h3 class="price__subtitle">
-                                <div>
-                                    основні послуги
-                                </div>
-                            </h3>
-                            <div class="price__items">
-                                <div class="price__item">
-                                    <div>
-                                        Стрижка чоловіча
-                                    </div>
-                                    <p></p><span>350 | 400 грн</span>
-                                </div>
-                                <div class="price__item">
-                                    <div>
-                                        Стрижка дитяча до 12р.
-                                    </div>
-                                    <p></p><span>250 | 300 грн</span>
-                                </div>
-                                <div class="price__item">
-                                    <div>
-                                        Стрижка підліткова 12-14р.
-                                    </div>
-                                    <p></p><span>300 | 350 грн</span>
-                                </div>
-                                <div class="price__item">
-                                    <div> Стрижка машинкою </div>
-                                    <p></p><span>300 | 350 грн</span>
-                                </div>
-                                <div class="price__item">
-                                    <div>
-                                        Традиційне гоління бороди(голови)
-                                    </div>
-                                    <p></p><span> 250 грн</span>
-                                </div>
-                                <div class="price__item">
-                                    <div>
-                                        Стрижка бороди
-                                    </div>
-                                    <p></p><span>250 | 300 грн</span>
-                                </div>
-                                <div class="price__item">
-                                    <div>
-                                        Стрижка вусів
-                                    </div>
-                                    <p></p><span>100 грн</span>
-                                </div>
-                                <div class="price__item">
-                                    <div> Камуфлювання сивини</div>
-                                    <p></p><span>250 грн</span>
-                                </div>
+        <section class="gallery section--bem" id="gallery">
+            <h2 class="gallery__title title">
+                Галерея
+            </h2>
+            <ul class="gallery__items">
+                <li class="gallery__item">
+                   
+                    <a class="gallery__link" href="images/gallery/1.jpg" data-fancybox="gallery">
+                        <img class="gallery__img" src="images/gallery/1.jpg" alt="Спина з лого">
+                    </a>
+                </li>
+                <li class="gallery__item">
+                    <a class="gallery__link" href="images/gallery/2.jpg" data-fancybox="gallery">
+                        <img class="gallery__img" src="images/gallery/2.jpg" alt="Гоління шиї">
+                    </a>
+                </li>
+                <li class="gallery__item">
+                    <a class="gallery__link" href="images/gallery/3.jpg" data-fancybox="gallery">
+                        <img class="gallery__img" src="images/gallery/3.jpg" alt="Стрижка за вухами">
+                    </a>
+                </li>
+                <li class="gallery__item">
+                    <a class="gallery__link" href="images/gallery/4.jpg" data-fancybox="gallery">
+                        <img class="gallery__img" src="images/gallery/4.jpg" alt="Вогняна стрижка">
+                    </a>
+                </li>
+                <li class="gallery__item">
+                    <a class="gallery__link" href="images/gallery/5.jpg" data-fancybox="gallery">
+                        <img class="gallery__img" src="images/gallery/5.jpg" alt="Крісло">
+                    </a>
+                </li>
+                <li class="gallery__item">
+                    <a class="gallery__link" href="images/gallery/6.jpg" data-fancybox="gallery">
+                        <img class="gallery__img" src="images/gallery/6.jpg" alt="інструменти">
+                    </a>
+                </li>
+                <li class="gallery__item">
+                    <a class="gallery__link" href="images/gallery/7.jpg" data-fancybox="gallery">
+                        <img class="gallery__img" src="images/gallery/7.jpg" alt="Килимок">
+                    </a>
+                </li>
+                <li class="gallery__item">
+                    <a class="gallery__link" href="images/gallery/8.jpg" data-fancybox="gallery">
+                        <img class="gallery__img" src="images/gallery/8.jpg" alt="Бритва">
+                    </a>
+                </li>
+                <li class="gallery__item">
+                    <a class="gallery__link" href="images/gallery/9.jpg" data-fancybox="gallery">
+                        <img class="gallery__img" src="images/gallery/9.jpg" alt="Стрижка машинкою">
+                    </a>
+                </li>
+                <li class="gallery__item">
+                    <a class="gallery__link" href="images/gallery/10.jpg" data-fancybox="gallery">
+                        <img class="gallery__img" src="images/gallery/10.jpg" alt="Перед стрижкою">
+                    </a>
+                </li>
+                <li class="gallery__item">
+                    <a class="gallery__link" href="images/gallery/11.jpg" data-fancybox="gallery">
+                        <img class="gallery__img" src="images/gallery/11.jpg" alt="Вищипування волосся">
+                    </a>
+                </li>
+                <li class="gallery__item">
+                    <a class="gallery__link" href="images/gallery/12.jpg" data-fancybox="gallery">
+                        <img class="gallery__img" src="images/gallery/12.jpg" alt="Масаж голови">
+                    </a>
+                </li>
+                <li class="gallery__item">
+                    <a class="gallery__link" href="images/gallery/13.jpg" data-fancybox="gallery">
+                        <img class="gallery__img" src="images/gallery/13.jpg" alt="Порошок для голови">
+                    </a>
+                </li>
+                <li class="gallery__item">
+                    <a class="gallery__link" href="images/gallery/14.jpg" data-fancybox="gallery">
+                        <img class="gallery__img" src="images/gallery/14.jpg" alt="Машинка для стрижки волосся">
+                    </a>
+                </li>
+                <li class="gallery__item">
+                    <a class="gallery__link" href="images/gallery/15.jpg" data-fancybox="gallery">
+                        <img class="gallery__img" src="images/gallery/15.jpg" alt="Гель">
+                    </a>
+                </li>
+                <li class="gallery__item">
+                    <a class="gallery__link" href="images/gallery/16.jpg" data-fancybox="gallery">
+                        <img class="gallery__img" src="images/gallery/16.jpg" alt="паста для укладки волос">
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="price section--bem" id="price">
+            <div class="container container--sm">
+                <h2 class="price__title title">
+                    прайс-лист
+                </h2>
+                <div class="price__text">
+                    <p>
+                        Black Peppers Barbershop є тим місцем, де ви зможете зробити сувору коротку або модну
+                        чоловічу стрижку, гладко поголитися, оформити бороду, доглянути за волоссям або обличчям - з
+                        відмінним результатом і без непотрібного пафосу.
+                    </p>
+                </div>
+                <div class="price__wrapper">
+                    <div class="price__left">
+                        <h3 class="price__subtitle link">
+                            основні послуги
+                        </h3>
+                        <div class="price__items">
+                            <div class="price__item">
+                                Стрижка чоловіча
+                                <p></p><span>350 | 400 грн</span>
+                            </div>
+                            <div class="price__item">
+                                Стрижка дитяча до 12р.
+                                <p></p><span>250 | 300 грн</span>
+                            </div>
+                            <div class="price__item">
+                                Стрижка підліткова 12-14р.
+                                <p></p><span>300 | 350 грн</span>
+                            </div>
+                            <div class="price__item">
+                                Стрижка машинкою
+                                <p></p><span>300 | 350 грн</span>
+                            </div>
+                            <div class="price__item">
+                                Традиційне гоління бороди(голови)
+                                <p></p><span> 250 грн</span>
+                            </div>
+                            <div class="price__item">
+                                Стрижка бороди
+                                <p></p><span>250 | 300 грн</span>
+                            </div>
+                            <div class="price__item">
+                                Стрижка вусів
+                                <p></p><span>100 грн</span>
+                            </div>
+                            <div class="price__item">
+                                Камуфлювання сивини
+                                <p></p><span>250 грн</span>
                             </div>
                         </div>
-
-                        <div class="price__right">
-                            <div class="price__items">
-                                <h3 class="price__subtitle">
-                                    комплексні послуги
-                                </h3>
-                                <div class="price__item">
-                                    <div>
-                                        “Батько та син” (стрижка чоловіча та дитяча до 12р.)
-                                    </div>
-                                    <p></p><span>550 | 600 грн</span>
+                    </div>
+                    <div class="price__right">
+                        <div class="price__items">
+                            <h3 class="price__subtitle link">
+                                комплексні послуги
+                            </h3>
+                            <div class="price__item">
+                                <div>
+                                    “Батько та син” (стрижка чоловіча та дитяча до 12р.)
                                 </div>
-                                <div class="price__item">
-                                    <div>
-                                        Стрижка чоловіча "Друг + Друг"
-                                    </div>
-                                    <p></p><span>600 | 700 грн</span>
-                                </div>
-                                <div class="price__item">
-                                    <div>
-                                        Стрижка чоловіча та Стрижка бороди
-                                    </div>
-                                    <p></p><span>550 | 600 грн</span>
-                                </div>
+                                <p></p><span>550 | 600 грн</span>
                             </div>
-                            <div class="price__items">
-                                <h3 class="price__subtitle">
-                                    Додаткові послуги
-                                </h3>
-                                <div class="price__item">
-                                    <div>
-                                        Миття голови та укладка
-                                    </div>
-                                    <p></p><span>100 грн</span>
+                            <div class="price__item">
+                                <div>
+                                    Стрижка чоловіча "Друг + Друг"
                                 </div>
+                                <p></p><span>600 | 700 грн</span>
+                            </div>
+                            <div class="price__item">
+                                <div>
+                                    Стрижка чоловіча та Стрижка бороди
+                                </div>
+                                <p></p><span>550 | 600 грн</span>
+                            </div>
+                        </div>
+                        <div class="price__items">
+                            <h3 class="price__subtitle link">
+                                Додаткові послуги
+                            </h3>
+                            <div class="price__item">
+                                <div>
+                                    Миття голови та укладка
+                                </div>
+                                <p></p><span>100 грн</span>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
     </main>
-    <!-- 
-    <footer class="footer">
-        <section class="footer__seaction">
+
+    <footer class="footer" id="contact">
             <div class="footer__inner">
                 <iframe class="map"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2550.519767886701!2d28.68104061165878!3d50.26355292786788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472c659edf680cfb%3A0xb545db5d980acf4b!2sBlack%20Peppers%20Barbershop!5e0!3m2!1sru!2sua!4v1603051030200!5m2!1sru!2sua"
-                    frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-
+                    style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                 <div class="contacts">
                     <a class="contacts__logo-link logo-link" href="#">
                         <img class="contacts__logo logo" src="images/footer-logo.png" alt="logo">
@@ -486,9 +356,9 @@
                     <div class="contacts__inner">
                         <div class="contacts__list">
                             <address class="contacts__item">
-                                <h2 class="contacts__title">
+                                <div class="contacts__title">
                                     Адреса
-                                </h2>
+                                </div>
                                 <p>
                                     вулиця Київська, 75,
                                 </p>
@@ -500,9 +370,9 @@
                                 </p>
                             </address>
                             <div class="contacts__item">
-                                <h2 class="contacts__title">
+                                <div class="contacts__title">
                                     Години роботи
-                                </h2>
+                                </div>
                                 <p>
                                     Понеділок - Неділя
                                 </p>
@@ -511,17 +381,17 @@
                                 </p>
                             </div>
                             <div class="contacts__item">
-                                <h2 class="contacts__title">
+                                <div class="contacts__title">
                                     Телефон
-                                </h2>
-                                <a class="contacts__link" href="tel:+380 96 042 0595">
+                                </div>
+                                <a class="contacts__link" href="tel:+380960420595">
                                     +380 96 042 0595
                                 </a>
                             </div>
                             <div class="contacts__item">
-                                <h2 class="contacts__title">
+                                <div class="contacts__title">
                                     Соціальні мережі
-                                </h2>
+                                </div>
                                 <ul class="social">
                                     <li class="social__item">
                                         <a class="social__link" href="#">
@@ -538,16 +408,13 @@
                                             <img class="social__img" src="images/instagram.png" alt="instagram">
                                         </a>
                                     </li>
-                                    <!-- пнг переделать в свг если получится --
-                                    </li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-    </footer> -->
+    </footer>
 
     <script src="js/main.min.js"></script>
 </body>

@@ -5,6 +5,7 @@ $active: #fb0909;
 $focus:#14B4BE;
 $hover:#C39F76;
 $brown: #c29e75;
+$brown2:#d2ab73;
 // brown
 
 $ac: #fcd7b6;
@@ -16,6 +17,9 @@ $black3:#262626;
 $title: #436372;
 $btn-menu:silver;
 $silver :#888888;
+$dotted: #999;
+
+
 
 /*$ac: #fcd7b6;
 
@@ -33,11 +37,11 @@ $silver :#888888;
 
 
 //section
-$padding-main:40px;
-$padding-1200:60px;
-$padding-992:50px; //70
-$padding-768:40px; //50
-$padding-576:30px;
+$padding-main:120px;//40
+$padding-1200:100px;
+$padding-992:80px; //70
+$padding-768:65px; //50
+$padding-576:65px;
 
 // @mixin line-clamp-box($line-clamp, ) {
 //     display: -webkit-box;
