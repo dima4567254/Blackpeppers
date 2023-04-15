@@ -182,9 +182,10 @@
     }
 
     &__record {
-        padding: 10px 15px;
+        padding: 9px 15px;
         border: 1px solid $white;
         transition: color 0.5s;
+        z-index: 999;
 
         &:focus {
             color: $focus;
@@ -204,14 +205,6 @@
             text-decoration: none;
             padding: 11px 20px;
             font-weight: 500;
-        }
-    }
-
-    &__link--active {
-        border-bottom: 2px solid $hover;
-
-        @media (max-width: 992px) {
-            border-bottom: 2px solid transparent;
         }
     }
 }
@@ -242,10 +235,11 @@
 .intro {
     &__inner {
         height: 100vh;
-        background-image: url('images/header-bg.jpg');
+        background-image: url('images/header-bg.webp');
         display: flex;
         justify-content: center;
         align-items: center;
+        color: transparent;
     }
 
     &__title {
@@ -284,10 +278,11 @@
         font-size: 20px;
         background-color: $hover;
         text-shadow: 1px 1px 2px $black1;
-        display: flex;
+        display: block;
         max-width: 230px;
         margin: 0 auto;
         transition: color 0.5s;
+        text-align: center;
 
         &:focus {
             color: $focus;

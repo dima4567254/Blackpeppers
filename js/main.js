@@ -4,7 +4,7 @@ $(function name(params) {
         $('.menu__items, .menu__btn').toggleClass('menu__items--active');
     });
 
-    $(".menu a").on("click", function (event) {
+    $(".menu__link").on("click", function (event) {
         event.preventDefault();
         var id = $(this).attr('href'),
             top = $(id).offset().top;
